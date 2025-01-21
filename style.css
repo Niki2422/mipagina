@@ -220,10 +220,6 @@ section{
     .hero-img{
         text-align: center;
     }
-    .hero-img img{
-       /*width: 80%;
-        /*margin: 10% 0 0 10%*/
-    }
 
     .scroll-down{
         display: none;
