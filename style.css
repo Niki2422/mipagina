@@ -28,6 +28,12 @@ header{
    
 }
 
+.logo-randazzodev a{
+    width: 100px;
+    border-radius: 20%;
+    
+}
+
 .logo{
     font-size: 30px;
     font-weight: 800;
