@@ -28,6 +28,11 @@ header{
    
 }
 
+header img{
+    height: 60px;
+    cursor:pointer;
+}
+
 .logo-randazzodev a{
     width: 100px;
     border-radius: 20%;
