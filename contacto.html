@@ -31,20 +31,32 @@
 </header>
 
 <section class="hero">
-    <div class="hero-text">
-        <h5>Contacto</h5>
-        <h1>Hablemos</h1>
-        <p>Podés escribirme a través de cualquiera de estos medios:</p>
-        <br>
+    <div class="contacto" id="contacto">
 
-        <ul style="line-height: 2rem;">
-            <li><i class="ri-mail-line"></i>  nicorandazzo55@gmail.com</li>
-            <li><i class="ri-instagram-line"></i>  @nicorandazzo</li>
-            <li><i class="ri-telegram-line"></i>  Telegram</li>
-        </ul>
-        <br>
 
-        <a href="mailto:nicolas@example.com">Enviar Email</a>
+        <form class="formulario-contacto">
+            <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? Escríbeme.</p>
+
+        <div class="campo">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="tu@email.com" required>
+        </div>
+
+        <div class="campo">
+        <label>Mensaje</label>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+        </form>
+
     </div>
 
     <div class="hero-img">
@@ -54,5 +66,38 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+emailjs.init("gMv2-lH099isnRFGn");
+})();
+
+document
+.querySelector(".formulario-contacto")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+emailjs.sendForm(
+"service_3oer8d4",
+"template_ajs4bhg",
+this
+).then(function(){
+
+alert("Mensaje enviado correctamente!");
+
+}, function(error){
+
+alert("Error al enviar el mensaje");
+
+});
+
+});
+</script>
 </body>
 </html>

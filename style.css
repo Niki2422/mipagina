@@ -212,6 +212,118 @@ section{
     transform:translateY(-5px)
 }
 
+.contacto{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contacto h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.contacto p{
+    margin-bottom:40px;
+    color:#c9c6c6;
+}
+
+.formulario-contacto{
+    max-width:500px;
+    margin:auto;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.campo label{
+    margin-bottom:6px;
+    font-weight:500;
+}
+
+.campo input,
+.campo textarea{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:14px;
+    transition:0.3s;
+    color: #131313;
+}
+
+.campo input:focus,
+.campo textarea:focus{
+    outline:none;
+    border-color:#0077ff;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background-color: #005fcc;
+    color:rgb(255, 255, 255);
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#011225;
+}
+
+.tecnologias {
+  background: #ffffff;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.tech-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.tech-card img {
+  width: 100px;
+  height: auto;
+}
+
+/* animación del carrusel */
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 992px){
     section{
         padding: 0 3%;
