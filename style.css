@@ -349,6 +349,12 @@ button:hover{
   transform: scale(1.1);
 }
 
+
+.carta-trabajo {
+    display: flex;
+}
+
+
 @media (max-width: 992px){
     section{
         padding: 0 3%;
