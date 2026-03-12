@@ -285,6 +285,14 @@ button:hover{
   overflow: hidden;
 }
 
+.tecnologias-work {
+   text-align:center;
+    font-size:40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
 .carousel {
   width: 100%;
   overflow: hidden;
@@ -350,8 +358,65 @@ button:hover{
 }
 
 
-.carta-trabajo {
-    display: flex;
+.trabajos{
+    max-width:1100px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.trabajos h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.trabajo{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    margin-bottom:80px;
+}
+
+.trabajo.reverse{
+    flex-direction:row-reverse;
+}
+
+.trabajo-img{
+    flex:1;
+}
+
+.trabajo-img img{
+    width:100%;
+    max-width:450px;
+    border-radius:12px;
+    transition:transform 0.3s ease;
+}
+
+.trabajo-img img:hover{
+    transform:scale(1.05);
+}
+
+.trabajo-texto{
+    flex:1;
+}
+
+.trabajo-texto h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.trabajo-texto p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.trabajo-texto ul{
+    list-style:none;
+    padding:0;
+}
+
+.trabajo-texto li{
+    margin-bottom:6px;
 }
 
 
